@@ -1,0 +1,61 @@
+.header {
+  height: 80px;
+  background-color: white;
+  padding: 15px 40px 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    .mlabs-logo {
+      width: 115px;
+      height: 48px;
+    }
+
+    .mlabs-menu {
+      display: none;
+    }
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+
+    .profile-logo {
+      width: 45px;
+      height: 45px;
+    }
+
+    .profile-name {
+      font-family: Poppins;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      text-align: center;
+      margin-left: 15px;
+    }
+  }
+}
+
+// responsive layout
+@media only screen and (max-width: 600px) {
+  .header {
+    .logo {
+      .mlabs-logo {
+        display: none;
+      }
+
+      .mlabs-menu {
+        display: block;
+        width: 22px;
+        height: 18px;
+      }
+    }
+
+    .profile {
+      .profile-name {
+        display: none;
+      }
+    }
+  }
+}
