@@ -1,0 +1,21 @@
+.Button {
+  height: 45px;
+  width: 184px;
+  border-radius: 4px;
+  border: 1px;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  .label-button {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+  }
+}
