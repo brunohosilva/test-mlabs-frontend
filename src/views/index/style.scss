@@ -1,13 +1,33 @@
 .container {
-    background: #E5E5E5;
+  background: #e5e5e5;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
 
-    .center {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        .post-img {
-            margin-bottom: 30px;
-        }
+  .imageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+
+    .post-img {
+      margin-bottom: 30px;
+      min-width: 80px;
     }
+  }
+
+  .buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+// responsive layout
+@media only screen and (max-width: 600px) {
+  .container {
+    .imageContainer {
+      margin-top: 30px;
+    }
+  }
 }

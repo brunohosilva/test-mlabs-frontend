@@ -10,10 +10,10 @@ const Index = () => {
   return (
     <div className="container">
       <Header />
-      <div className="center">
+      <div className="imageContainer">
         <img src={Post} alt="Logo" className="post-img" />
       </div>
-      <div className="center">
+      <div className="buttonContainer">
         <Button text="Agendar post" color="#F2994A" />
       </div>
     </div>
