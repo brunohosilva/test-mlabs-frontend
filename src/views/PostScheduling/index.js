@@ -1,23 +1,20 @@
 import React from 'react';
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import Button from '../../components/Button';
 import Image from '../../lib/Images';
 import './style.scss';
 
-const Index = () => {
+const PostScheduling = () => {
   const {Post} = Image;
 
   return (
     <div className="container">
       <Header />
-      <div className="imageContainer">
-        <img src={Post} alt="Logo" className="post-img" />
-      </div>
-      <div className="buttonContainer">
-        <Button text="Agendar post" color="#F2994A" isLink={true} />
-      </div>
+      <div>tela de post</div>
+      <Footer />
     </div>
   );
 };
 
-export default Index;
+export default PostScheduling;

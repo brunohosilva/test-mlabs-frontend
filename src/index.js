@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 import './index.css';
-import Index from './views/index';
+import Index from './views/Index';
+import PostScheduling from './views/PostScheduling';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/" exact component={Index} />
+      <Route path="/post-scheduling" exact component={PostScheduling} />
     </Switch>
   </BrowserRouter>,
   document.getElementById('root'),
