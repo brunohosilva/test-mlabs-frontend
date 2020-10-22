@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import SocialNetwork from '../../components/SocialNetwork';
 import './style.css';
 
 const PostScheduling = () => {
@@ -10,7 +11,9 @@ const PostScheduling = () => {
       <div class="row">
         <div class="col-6 col-s-12">
           <div class="row">
-            <div class="col-6 col-s-9">rede social</div>
+            <div class="col-6 col-s-9">
+              <SocialNetwork />
+            </div>
             <div class="col-6 col-s-12">data de publicação</div>
           </div>
           <div class="row">

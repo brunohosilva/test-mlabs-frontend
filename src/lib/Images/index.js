@@ -2,10 +2,22 @@ import Logo from '../../assets/Images/mlabs-logo.png';
 import Profile from '../../assets/Images/profile.png';
 import Menu from '../../assets/Images/menu.png';
 import Post from '../../assets/Images/posts.png';
+import Instagram from '../../assets/Images/instagram.png';
+import Facebook from '../../assets/Images/facebook.png';
+import Pinterest from '../../assets/Images/pinterest.png';
+import Twitter from '../../assets/Images/twitter.png';
+import Youtube from '../../assets/Images/youtube.png';
+import Linkedin from '../../assets/Images/linkedin.png';
 
 export default {
+  Facebook,
+  Instagram,
+  Linkedin,
   Logo,
   Menu,
+  Pinterest,
   Post,
   Profile,
+  Twitter,
+  Youtube,
 };
