@@ -8,8 +8,12 @@ import Pinterest from '../../assets/Images/pinterest.png';
 import Twitter from '../../assets/Images/twitter.png';
 import Youtube from '../../assets/Images/youtube.png';
 import Linkedin from '../../assets/Images/linkedin.png';
+import CalendarIcon from '../../assets/Images/calendar.png';
+import Clock from '../../assets/Images/clock.png';
 
 export default {
+  CalendarIcon,
+  Clock,
   Facebook,
   Instagram,
   Linkedin,
