@@ -14,7 +14,12 @@ const Index = () => {
         <img src={Post} alt="Logo" className="post-img" />
       </div>
       <div className="buttonContainer">
-        <Button text="Agendar post" color="#F2994A" isLink={true} />
+        <Button
+          text="Agendar post"
+          color="#F2994A"
+          isLink={true}
+          borderColor="transparent"
+        />
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ const Footer = () => {
     console.log('salvar rascunho');
   }
 
-  // function to Save Draft
+  // function to Schedule
   function Schedule() {
     console.log('Agendar');
   }
