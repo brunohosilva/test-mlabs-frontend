@@ -5,6 +5,7 @@ import SocialNetwork from '../../components/SocialNetwork';
 import Calendar from '../../components/Calendar';
 import TextPost from '../../components/TextPost';
 import UploadImage from '../../components/UploadImage';
+import PostPreview from '../../components/PostPreview';
 
 import './style.css';
 
@@ -35,7 +36,9 @@ const PostScheduling = () => {
         </div>
         <div className="col-6 col-s-12 paddingBottom">
           <div className="row">
-            <div className="col-12 col-s-12">Visualização de post</div>
+            <div className="col-12 col-s-12">
+              <PostPreview />
+            </div>
           </div>
         </div>
       </div>

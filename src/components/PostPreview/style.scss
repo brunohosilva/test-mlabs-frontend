@@ -1,0 +1,87 @@
+.previewContainer {
+  .preview {
+    width: 100%;
+    height: 600px;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e0e0e0;
+    background-color: #ffffff;
+
+    .previewTitleBox {
+      height: 30px;
+      border-width: 0 0 1px 0;
+      border-style: solid;
+      border-color: #e0e0e0;
+      display: flex;
+      align-items: center;
+
+      .title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #333333;
+        margin-left: 10px;
+      }
+    }
+
+    .previewBox {
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 570px;
+      padding: 5px;
+      border-width: 2px;
+      border-color: #bdbdbd;
+    }
+
+    .phrasePreview {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      text-align: center;
+      color: #828282;
+    }
+  }
+
+  .mobilePreview {
+    display: none;
+  }
+}
+
+// responsive layout
+@media only screen and (max-width: 600px) {
+  .previewContainer{
+    .preview {
+      display: none;
+    }
+
+    .mobilePreview {
+      display: block;
+      cursor: pointer;
+
+      .ButtonPreviewPost {
+        height: 35px;
+        background-color: #F2994A;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .label {
+          color: #ffffff;
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          text-align: center;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}

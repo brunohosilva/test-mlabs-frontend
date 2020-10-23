@@ -11,18 +11,26 @@ import Linkedin from '../../assets/Images/linkedin.png';
 import CalendarIcon from '../../assets/Images/calendar.png';
 import Clock from '../../assets/Images/clock.png';
 import Upload from '../../assets/Images/upload.png';
+import PreviewImage from '../../assets/Images/postPreview.png';
+import Like from '../../assets/Images/like.png';
+import Comment from '../../assets/Images/comment.png';
+import Save from '../../assets/Images/save.png';
 
 export default {
   CalendarIcon,
   Clock,
+  Comment,
   Facebook,
   Instagram,
+  Like,
   Linkedin,
   Logo,
   Menu,
   Pinterest,
   Post,
+  PreviewImage,
   Profile,
+  Save,
   Twitter,
   Upload,
   Youtube,

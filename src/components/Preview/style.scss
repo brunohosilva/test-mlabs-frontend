@@ -1,0 +1,44 @@
+.viewPost {
+  width: 368px;
+  height: 535px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #BDBDBD;
+  border-radius: 4px;
+
+  .profile {
+    height: 83px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+
+    .socialLogo{
+      margin-right: 10px;
+    }
+  }
+
+  .imagemPost{
+    height: 368px;
+  }
+
+  .postDescription {
+    height: 83px;
+
+    .text{
+      height: 70%;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+    }
+
+    .options {
+      height: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+    }
+
+  }
+  
+}
