@@ -3,6 +3,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import SocialNetwork from '../../components/SocialNetwork';
 import Calendar from '../../components/Calendar';
+import TextPost from '../../components/TextPost';
 import './style.css';
 
 const PostScheduling = () => {
@@ -20,13 +21,19 @@ const PostScheduling = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-12 col-s-12">Texto do post</div>
+            <div className="col-12 col-s-12">
+              <TextPost />
+            </div>
           </div>
           <div className="row">
             <div className="col-12 col-s-12">Upload de imagem</div>
           </div>
         </div>
-        <div className="col-6 col-s-12">Visualozação de post</div>
+        <div className="col-6 col-s-12">
+          <div className="row">
+            <div className="col-12 col-s-12">Visualização de post</div>
+          </div>
+        </div>
       </div>
 
       <Footer />

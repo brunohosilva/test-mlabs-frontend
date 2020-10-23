@@ -3,7 +3,7 @@
   background-color: white;
   display: flex;
   align-items: center;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
 
@@ -30,7 +30,7 @@
       width: 100%;
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: space-between;
 
       .button:not(:first-child) {
         margin-left: 0px;

@@ -16,3 +16,21 @@ code {
   font-family: 'Poppins';
   src: local('Poppins'), url(./assets/fonts/Poppins-Regular.ttf) format('truetype');
 }
+
+.react-input-emoji--input {
+  height: 160px !important;
+  max-height: 160px !important;
+}
+
+.react-emoji-picker--wrapper{
+  top: -36px !important;
+  right: -339px !important;
+}
+
+/* responsive layout */
+@media only screen and (max-width: 600px) {
+  .react-emoji-picker--wrapper{
+    top: -392px !important;
+    right: 0px !important;
+  }
+}
