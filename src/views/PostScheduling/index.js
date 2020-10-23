@@ -4,6 +4,8 @@ import Footer from '../../components/Footer';
 import SocialNetwork from '../../components/SocialNetwork';
 import Calendar from '../../components/Calendar';
 import TextPost from '../../components/TextPost';
+import UploadImage from '../../components/UploadImage';
+
 import './style.css';
 
 const PostScheduling = () => {
@@ -26,7 +28,9 @@ const PostScheduling = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-12 col-s-12">Upload de imagem</div>
+            <div className="col-12 col-s-12">
+              <UploadImage />
+            </div>
           </div>
         </div>
         <div className="col-6 col-s-12 paddingBottom">

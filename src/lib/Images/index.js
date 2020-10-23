@@ -10,6 +10,7 @@ import Youtube from '../../assets/Images/youtube.png';
 import Linkedin from '../../assets/Images/linkedin.png';
 import CalendarIcon from '../../assets/Images/calendar.png';
 import Clock from '../../assets/Images/clock.png';
+import Upload from '../../assets/Images/upload.png';
 
 export default {
   CalendarIcon,
@@ -23,5 +24,6 @@ export default {
   Post,
   Profile,
   Twitter,
+  Upload,
   Youtube,
 };
