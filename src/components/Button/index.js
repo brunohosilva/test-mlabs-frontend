@@ -5,7 +5,7 @@ const Button = (props) => {
   function Label() {
     if (props.isLink) {
       return (
-        <a href="/post-scheduling" className="Link">
+        <a href={props.link} className="Link">
           <span className="label-button" style={{color: props.textColor}}>
             {props.text}
           </span>

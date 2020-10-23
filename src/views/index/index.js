@@ -18,6 +18,7 @@ const Index = () => {
           text="Agendar post"
           color="#F2994A"
           isLink={true}
+          link={'/post-scheduling'}
           borderColor="transparent"
         />
       </div>

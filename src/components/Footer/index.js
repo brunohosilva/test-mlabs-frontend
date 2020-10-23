@@ -49,7 +49,8 @@ const Footer = () => {
             color="#2F80ED"
             textColor="#FFFFFF"
             borderColor="#2F80ED"
-            isLink={false}
+            isLink={true}
+            link={'/schedules'}
           />
         </div>
       </div>
