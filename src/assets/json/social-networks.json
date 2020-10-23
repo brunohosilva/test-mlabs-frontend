@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Facebook",
+      "icon": "Facebook",
+      "status": "disabled"
+    },
+    {
+      "id": 2,
+      "name": "Linkedin",
+      "icon": "Linkedin",
+      "status": "enabled"
+    },
+    {
+      "id": 3,
+      "name": "Instagram",
+      "icon": "Instagram",
+      "status": "enabled"
+    },
+    {
+      "id": 4,
+      "name": "Youtube",
+      "icon": "Youtube",
+      "status": "disabled"
+    },
+    {
+      "id": 5,
+      "name": "Pinterest",
+      "icon": "Pinterest",
+      "status": "disabled"
+    },
+    {
+      "id": 6,
+      "name": "Twitter",
+      "icon": "Twitter",
+      "status": "disabled"
+    }
+  ]
+}

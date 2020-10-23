@@ -1,34 +1,31 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Image from '../../lib/Images';
+import Social from '../../assets/json/social-networks';
 import './style.scss';
 
 const SocialNetwork = () => {
-  const {Instagram, Facebook, Pinterest, Twitter, Youtube, Linkedin} = Image;
-  // TODO: logic --> put a checkbox to know if is true or false and get each type
+  const [socialSelected, setSocialSelection] = useState('');
+  console.log('-->', socialSelected);
+
+  const data = Social.data;
   return (
     <div className="socialNetwork">
       <div className="socialTitleBox">
         <span className="title">Redes sociais</span>
       </div>
       <div className="socialList">
-        <div className="circleLogo">
-          <img className="socialLogo" src={Instagram} alt="Instagram" />
-        </div>
-        <div className="circleLogo">
-          <img className="socialLogo" src={Facebook} alt="Facebook" />
-        </div>
-        <div className="circleLogo">
-          <img className="socialLogo" src={Pinterest} alt="Pinterest" />
-        </div>
-        <div className="circleLogo">
-          <img className="socialLogo" src={Twitter} alt="Twitter" />
-        </div>
-        <div className="circleLogo">
-          <img className="socialLogo" src={Youtube} alt="Youtube" />
-        </div>
-        <div className="circleLogo">
-          <img className="socialLogo" src={Linkedin} alt="Linkedin" />
-        </div>
+        {data.map((item, index) => {
+          const icon = Image[item.name];
+          const status = item.status === 'disabled' ? 'block' : 'pointer';
+          return (
+            <div
+              className={status}
+              key={index}
+              onClick={() => setSocialSelection(item.name)}>
+              <img className="socialLogo" src={icon} alt={item.name} />
+            </div>
+          );
+        })}
       </div>
     </div>
   );
