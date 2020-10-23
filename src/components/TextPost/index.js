@@ -11,7 +11,7 @@ const TextPost = () => {
   return (
     <div className="textPost">
       <div className="textPostTitleBox">
-        <span className="title">Redes sociais</span>
+        <span className="title">Texto do post</span>
       </div>
       <div className="textContainer">
         <InputEmoji

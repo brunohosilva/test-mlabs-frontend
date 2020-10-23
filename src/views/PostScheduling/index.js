@@ -29,7 +29,7 @@ const PostScheduling = () => {
             <div className="col-12 col-s-12">Upload de imagem</div>
           </div>
         </div>
-        <div className="col-6 col-s-12">
+        <div className="col-6 col-s-12 paddingBottom">
           <div className="row">
             <div className="col-12 col-s-12">Visualização de post</div>
           </div>

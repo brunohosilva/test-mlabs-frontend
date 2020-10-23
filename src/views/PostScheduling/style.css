@@ -12,22 +12,17 @@
   float: left;
   padding: 15px;
 }
-.teste {
-  background-color: red;
-  display: flex;
-}
-
-.box1 {
-  background-color: blue;
-}
-
-.box2 {
-  background-color: green;
-}
 
 /* For mobile phones: */
 [class*='col-'] {
   width: 100%;
+}
+
+/*  responsive layout */
+@media only screen and (max-width: 600px) {
+  .paddingBottom {
+    padding-bottom: 100px;
+  }
 }
 
 @media only screen and (min-width: 600px) {
