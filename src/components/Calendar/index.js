@@ -5,15 +5,18 @@ import moment from 'moment';
 import './style.scss';
 import 'rsuite/dist/styles/rsuite-default.css';
 
-const Calendar = () => {
+const Calendar = (props) => {
+  const {SetDate = () => {}} = props;
+  const {SetHour = () => {}} = props;
+
   function GetDate(e) {
-    const date = moment(e[0]).format('YYYY-MM-DD');
-    console.log('data -->', date);
+    const date = moment(e).format('DD-MM-YY');
+    SetDate(date);
   }
 
   function GetHour(e) {
-    const hour = moment(e[0]).format('HH:MM');
-    console.log('data -->', hour);
+    const hour = moment(e).format('HH:mm');
+    SetHour(hour);
   }
 
   return (

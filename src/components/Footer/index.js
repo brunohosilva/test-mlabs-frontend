@@ -1,12 +1,9 @@
 import React from 'react';
-import Image from '../../lib/Images';
 import Button from '../../components/Button';
 
 import './style.scss';
 
-const Footer = () => {
-  const {Logo, Profile, Menu} = Image;
-
+const Footer = (props) => {
   // function to cancel Schedule
   function Cancel() {
     console.log('cancelar');
@@ -19,7 +16,7 @@ const Footer = () => {
 
   // function to Schedule
   function Schedule() {
-    console.log('Agendar');
+    localStorage.setItem('data', JSON.stringify(props.data));
   }
 
   return (

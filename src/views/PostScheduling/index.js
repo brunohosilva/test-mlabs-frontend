@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import SocialNetwork from '../../components/SocialNetwork';
@@ -10,6 +10,20 @@ import PostPreview from '../../components/PostPreview';
 import './style.css';
 
 const PostScheduling = () => {
+  const [setDate, getDate] = useState('');
+  const [setHour, getHour] = useState('');
+  const [setSocial, getSocial] = useState('');
+  const [setTextPost, getTextPost] = useState('');
+
+  const data = [
+    {
+      date: setDate,
+      hour: setHour,
+      social: setSocial,
+      text: setTextPost,
+    },
+  ];
+
   return (
     <div className="container">
       <Header />
@@ -17,15 +31,18 @@ const PostScheduling = () => {
         <div className="col-6 col-s-12">
           <div className="row">
             <div className="col-6 col-s-9">
-              <SocialNetwork />
+              <SocialNetwork SetSocial={(type) => getSocial(type)} />
             </div>
             <div className="col-6 col-s-12">
-              <Calendar />
+              <Calendar
+                SetDate={(date) => getDate(date)}
+                SetHour={(hour) => getHour(hour)}
+              />
             </div>
           </div>
           <div className="row">
             <div className="col-12 col-s-12">
-              <TextPost />
+              <TextPost SetTextPost={(text) => getTextPost(text)} />
             </div>
           </div>
           <div className="row">
@@ -43,7 +60,7 @@ const PostScheduling = () => {
         </div>
       </div>
 
-      <Footer />
+      <Footer data={data} />
     </div>
   );
 };

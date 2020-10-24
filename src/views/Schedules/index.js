@@ -3,6 +3,9 @@ import Header from '../../components/Header';
 import './style.scss';
 
 const Schedules = () => {
+  const data = localStorage.getItem('data');
+  const response = JSON.parse(data);
+
   return (
     <div className="container">
       <Header />
@@ -17,16 +20,22 @@ const Schedules = () => {
               <th className="title">Ações</th>
               <th className="title">Status</th>
             </tr>
-            <tr>
-              <td>Insta</td>
-              <td className="heigth">
-                <div className="imagePostContainer" />
-              </td>
-              <td className="description">Descrição post</td>
-              <td className="description">09/10/15 as 12:00h</td>
-              <td>preview</td>
-              <td className="description">Agendado</td>
-            </tr>
+            {response.map((item, index) => {
+              return (
+                <tr key={index}>
+                  <td>{item.social}</td>
+                  <td className="heigth">
+                    <div className="imagePostContainer" />
+                  </td>
+                  <td className="description">{item.text}</td>
+                  <td className="description">
+                    {item.date} ás {item.hour}
+                  </td>
+                  <td>preview</td>
+                  <td className="description">Agendado</td>
+                </tr>
+              );
+            })}
           </table>
         </div>
       </div>

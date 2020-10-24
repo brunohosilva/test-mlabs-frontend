@@ -3,9 +3,10 @@ import Image from '../../lib/Images';
 import Social from '../../assets/json/social-networks';
 import './style.scss';
 
-const SocialNetwork = () => {
+const SocialNetwork = (props) => {
+  const {SetSocial = () => {}} = props;
   const [socialSelected, setSocialSelection] = useState('');
-  console.log('-->', socialSelected);
+  SetSocial(socialSelected);
 
   const data = Social.data;
   return (

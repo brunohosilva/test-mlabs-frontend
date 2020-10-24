@@ -1,13 +1,12 @@
 import React, {useState} from 'react';
 import InputEmoji from 'react-input-emoji';
-import Image from '../../lib/Images';
 import './style.scss';
 
-const TextPost = () => {
-  const {} = Image;
+const TextPost = (props) => {
+  const {SetTextPost = () => {}} = props;
   const [text, setText] = useState('');
+  SetTextPost(text);
 
-  // TODO: logic --> put a checkbox to know if is true or false and get each type
   return (
     <div className="textPost">
       <div className="textPostTitleBox">
