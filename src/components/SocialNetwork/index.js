@@ -22,7 +22,11 @@ const SocialNetwork = (props) => {
             <div
               className={status}
               key={index}
-              onClick={() => setSocialSelection(item.name)}>
+              onClick={() =>
+                item.status === 'disabled'
+                  ? console.log('notificar que está bloqueado')
+                  : setSocialSelection(item.name)
+              }>
               <img className="socialLogo" src={icon} alt={item.name} />
             </div>
           );

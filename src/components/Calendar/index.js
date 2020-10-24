@@ -10,7 +10,7 @@ const Calendar = (props) => {
   const {SetHour = () => {}} = props;
 
   function GetDate(e) {
-    const date = moment(e).format('DD-MM-YY');
+    const date = moment(e).format('DD/MM/YY');
     SetDate(date);
   }
 

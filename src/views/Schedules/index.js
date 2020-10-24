@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from '../../components/Header';
+
+import Image from '../../lib/Images';
 import './style.scss';
 
 const Schedules = () => {
@@ -21,15 +23,22 @@ const Schedules = () => {
               <th className="title">Status</th>
             </tr>
             {response.map((item, index) => {
+              const social = Image[item.social];
               return (
                 <tr key={index}>
-                  <td>{item.social}</td>
+                  <td>
+                    <img
+                      className="socialLogo"
+                      src={social}
+                      alt={item.social}
+                    />
+                  </td>
                   <td className="heigth">
                     <div className="imagePostContainer" />
                   </td>
                   <td className="description">{item.text}</td>
                   <td className="description">
-                    {item.date} ás {item.hour}
+                    {item.date} ás {item.hour}h
                   </td>
                   <td>preview</td>
                   <td className="description">Agendado</td>
