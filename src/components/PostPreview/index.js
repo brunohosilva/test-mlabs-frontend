@@ -3,7 +3,7 @@ import Image from '../../lib/Images';
 import SocialPreview from '../Preview';
 import './style.scss';
 
-const PostPreview = () => {
+const PostPreview = (props) => {
   const {PreviewImage} = Image;
 
   function Preview(params) {
@@ -22,8 +22,8 @@ const PostPreview = () => {
         <div className="previewBox">
           <SocialPreview
             name="Bruno Oliveira"
-            image="imagem"
-            textPost="texto do post"
+            image={props.image}
+            textPost={props.text}
           />
         </div>
       );

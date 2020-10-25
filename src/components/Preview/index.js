@@ -3,16 +3,23 @@ import Image from '../../lib/Images';
 import './style.scss';
 
 const TextPost = (props) => {
-  const {Instagram, Like, Comment, Save} = Image;
+  const {Instagram, Like, Comment, Save, PreviewImage} = Image;
+
+  function ImagePost() {
+    if (props.image === '') {
+      return <img src={PreviewImage} alt="Imagem do post" className="image" />;
+    } else {
+      return <img src={props.image} alt="Imagem do post" className="image" />;
+    }
+  }
+
   return (
     <div className="viewPost">
       <div className="profile">
         <img className="socialLogo" src={Instagram} alt="Instagram" />
         <span>{props.name}</span>
       </div>
-      <div className="imagemPost">
-        <span>{props.image}</span>
-      </div>
+      <div className="imagemPost">{ImagePost()}</div>
       <div className="postDescription">
         <div className="options">
           <img src={Like} alt="Like" />

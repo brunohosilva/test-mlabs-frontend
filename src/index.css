@@ -27,6 +27,10 @@ code {
   right: -339px !important;
 }
 
+.react-input-emoji--input {
+  width: 100% !important;
+}
+
 /* responsive layout */
 @media only screen and (max-width: 600px) {
   .react-emoji-picker--wrapper{
