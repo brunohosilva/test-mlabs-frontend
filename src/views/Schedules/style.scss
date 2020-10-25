@@ -13,13 +13,13 @@
       border-width: 2px;
       border-color: #bdbdbd;
       margin-top: 100px;
+      overflow: auto;
 
       .width {
         width: 45%;
-        
       }
 
-      .heigth{
+      .heigth {
         height: 65px;
 
         .imagePostContainer {
@@ -67,7 +67,9 @@
         color: #4f4f4f;
       }
 
-      .socialLogo{
+
+
+      .socialLogo {
         margin-left: 20px;
       }
 
@@ -84,6 +86,23 @@
 
       tr:nth-child(odd) {
         background-color: white;
+      }
+    }
+  }
+}
+
+// responsive layout
+@media only screen and (max-width: 600px) {
+  .container {
+    .padding {
+      .tableContainer {
+        .width {
+          min-width: 250px;
+        }
+
+        .width150 {
+          min-width: 150px;
+        }
       }
     }
   }

@@ -18,12 +18,12 @@ const Schedules = () => {
         <div className="tableContainer">
           <table>
             <tr>
-              <th className="title">Redes sociais</th>
+              <th className="title width150">Redes sociais</th>
               <th className="title">Mídia</th>
               <th className="width heigth title">Texto</th>
-              <th className="title">Data</th>
-              <th className="title">Ações</th>
-              <th className="title">Status</th>
+              <th className="title width150">Data</th>
+              <th className="title width150">Ações</th>
+              <th className="title width150">Status</th>
             </tr>
             {response.map((item, index) => {
               const social = Image[item.social];
@@ -81,7 +81,7 @@ const Schedules = () => {
                   statusColor = '#27AE60';
                   break;
                 case 3:
-                  status = 'Postado com ressalvas';
+                  status = 'Não aprovado';
                   statusColor = '#F2C94C';
                   break;
               }
