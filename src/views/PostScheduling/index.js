@@ -14,11 +14,13 @@ const PostScheduling = () => {
   const [setHour, getHour] = useState('');
   const [setSocial, getSocial] = useState('');
   const [setTextPost, getTextPost] = useState('');
+  const [setImagePost, getImagePost] = useState('');
 
   const data = [
     {
       date: setDate,
       hour: setHour,
+      image: setImagePost,
       social: setSocial,
       text: setTextPost,
     },
@@ -47,7 +49,7 @@ const PostScheduling = () => {
           </div>
           <div className="row">
             <div className="col-12 col-s-12">
-              <UploadImage />
+              <UploadImage ImagePost={(image) => getImagePost(image)} />
             </div>
           </div>
         </div>

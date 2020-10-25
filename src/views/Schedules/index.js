@@ -37,7 +37,11 @@ const Schedules = () => {
                     />
                   </td>
                   <td className="heigth">
-                    <div className="imagePostContainer" />
+                    <img
+                      className="imagePostContainer"
+                      src={item.image}
+                      alt={item.social}
+                    />
                   </td>
                   <td className="description">{item.text}</td>
                   <td className="description">
