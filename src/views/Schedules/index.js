@@ -59,16 +59,16 @@ const Schedules = () => {
               const hour = moment(item.publication_date).format('HH:mm');
 
               let logo;
-              var aStr = item.social_network_key;
-              for (var i = 0; i < aStr.length; i++) {
-                var supp = aStr[i];
-                switch (supp) {
+              var tmp = item.social_network_key;
+              for (var i = 0; i < tmp.length; i++) {
+                var statusKey = tmp[i];
+                switch (statusKey) {
                   case 2 && 3:
-                    logo = `<img className="tesssteeeee" src=${Instagram} />  <img className="tesssteeeee" src=${Linkedin} />`;
+                    logo = `<img class="socialLogo" src=${Instagram} />  <img class="socialLogo" src=${Linkedin} />`;
                     break;
 
                   case 2:
-                    logo = `<img className="tesssteeeee" src=${Instagram} />`;
+                    logo = `<img class="socialLogo" src=${Instagram} />`;
                     break;
                 }
               }
@@ -85,6 +85,7 @@ const Schedules = () => {
                   statusColor = '#F2C94C';
                   break;
               }
+
               return (
                 <tr key={index}>
                   <td
