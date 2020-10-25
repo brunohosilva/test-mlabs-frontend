@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../../components/Button';
+import {NotifySuccessScheduling} from '../../lib/Modal';
 
 import './style.scss';
 
@@ -41,14 +42,7 @@ const Footer = (props) => {
           />
         </div>
         <div className="button" onClick={Schedule}>
-          <Button
-            text="Agendar"
-            color="#2F80ED"
-            textColor="#FFFFFF"
-            borderColor="#2F80ED"
-            isLink={true}
-            link={'/schedules'}
-          />
+          <NotifySuccessScheduling data={props.data} />
         </div>
       </div>
     </div>

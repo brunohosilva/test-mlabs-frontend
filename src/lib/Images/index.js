@@ -15,6 +15,7 @@ import PreviewImage from '../../assets/Images/postPreview.png';
 import Like from '../../assets/Images/like.png';
 import Comment from '../../assets/Images/comment.png';
 import Save from '../../assets/Images/save.png';
+import Success from '../../assets/Images/success.png';
 
 export default {
   CalendarIcon,
@@ -31,6 +32,7 @@ export default {
   PreviewImage,
   Profile,
   Save,
+  Success,
   Twitter,
   Upload,
   Youtube,
