@@ -14,3 +14,14 @@
   text-align: center;
   color: #4f4f4f;
 }
+
+.labelPreview {
+  cursor: pointer;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-decoration-line: underline;
+  color: #1661f3;
+}

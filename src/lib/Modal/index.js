@@ -94,9 +94,15 @@ export const ModalPreview = (props): void => {
 
   return (
     <div className="modal-container">
-      <div onClick={() => Open()} className="ButtonPreviewPost">
-        <span className="label">Visualizar post</span>
-      </div>
+      {props.type === 'SchedulesPreview' ? (
+        <div onClick={() => Open()} className="ButtonPreviewPost">
+          <span className="labelPreview">Preview</span>
+        </div>
+      ) : (
+        <div onClick={() => Open()} className="ButtonPreviewPost">
+          <span className="label">Visualizar post</span>
+        </div>
+      )}
       <Modal show={isOpen} onHide={() => Close()}>
         <Modal.Header>
           <Modal.Title>Visualização do post</Modal.Title>

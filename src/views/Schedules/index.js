@@ -2,6 +2,8 @@ import React from 'react';
 import moment from 'moment';
 import Header from '../../components/Header';
 import schedulesList from '../../assets/json/schedules';
+
+import {ModalPreview} from '../../lib/Modal';
 import Image from '../../lib/Images';
 import './style.scss';
 
@@ -47,7 +49,13 @@ const Schedules = () => {
                   <td className="description">
                     {item.date} ás {item.hour}h
                   </td>
-                  <td>preview</td>
+                  <td>
+                    <ModalPreview
+                      type={'SchedulesPreview'}
+                      textPost={item.text}
+                      image={item.image}
+                    />
+                  </td>
                   <td className="status">
                     <div
                       className="typeStatus"
@@ -107,7 +115,13 @@ const Schedules = () => {
                       {date} ás {hour}h
                     </span>
                   </td>
-                  <td>preview</td>
+                  <td>
+                    <ModalPreview
+                      type={'SchedulesPreview'}
+                      textPost={item.text}
+                      image={item.media}
+                    />
+                  </td>
                   <td className="status">
                     <div
                       className="typeStatus"
