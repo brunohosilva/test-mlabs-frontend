@@ -31,6 +31,28 @@ code {
   width: 100% !important;
 }
 
+.dzu-submitButtonContainer {
+  display: none;
+}
+
+.dzu-inputLabelWithFiles {
+  display: none !important;
+}
+
+.dzu-dropzone {
+  border: 0px solid transparent;
+}
+
+.dzu-previewContainer{
+  padding: 0 !important;
+}
+
+.dzu-dropzone {
+  min-height: 70px !important;
+  overflow: auto !important;
+  border: 2px solid #2484FF !important;
+}
+
 /* responsive layout */
 @media only screen and (max-width: 600px) {
   .react-emoji-picker--wrapper{

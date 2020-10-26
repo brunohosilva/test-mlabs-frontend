@@ -1,11 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Dropzone from 'react-dropzone-uploader';
-
+import Image from '../../lib/Images';
 import 'react-dropzone-uploader/dist/styles.css';
 import './style.scss';
 
 const UploadImage = (props) => {
+  const [hasImage, setHasImage] = useState('');
   const {ImagePost = () => {}} = props;
+  const {Upload} = Image;
 
   // specify upload params and url for your files
   const getUploadParams = ({meta}) => {
@@ -15,6 +17,7 @@ const UploadImage = (props) => {
   // called every time a file's `status` changes
   const handleChangeStatus = ({meta, file}, status) => {
     ImagePost(meta.previewUrl);
+    setHasImage(status);
   };
 
   // receives array of files that are done uploading when submit button is clicked
@@ -27,12 +30,31 @@ const UploadImage = (props) => {
       <div className="uploadTitleBox">
         <span className="title">Upload de imagem</span>
       </div>
-      <Dropzone
-        getUploadParams={getUploadParams}
-        onChangeStatus={handleChangeStatus}
-        onSubmit={handleSubmit}
-        accept="image/*,audio/*,video/*"
-      />
+      <div className="uploadContainer">
+        <div className="uploadBox">
+          <div
+            className="center"
+            style={{
+              display:
+                hasImage === '' || hasImage === 'removed' ? 'flex' : 'none',
+            }}>
+            <img src={Upload} alt="Upload" />
+            <p className="phraseUpload">
+              Arraste e solte uma imagem aqui ou clique no botão abaixo
+            </p>
+          </div>
+
+          <div className="button">
+            <Dropzone
+              getUploadParams={getUploadParams}
+              onChangeStatus={handleChangeStatus}
+              onSubmit={handleSubmit}
+              accept="image/*,audio/*,video/*"
+              inputContent={'Pesquisar imagens'}
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

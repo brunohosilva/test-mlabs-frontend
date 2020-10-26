@@ -27,7 +27,7 @@ const TextPost = (props) => {
           <img src={Save} alt="Instagram" />
         </div>
         <div className="text">
-          <span>{props.textPost}</span>
+          <span>{props.textPost ? props.textPost : 'Texto do post'}</span>
         </div>
       </div>
     </div>
