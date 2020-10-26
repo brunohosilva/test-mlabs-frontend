@@ -71,3 +71,56 @@ export const NotifySuccessScheduling = (props): void => {
     </div>
   );
 };
+
+export const ModalPreview = (props): void => {
+  const [isOpen, setIsOpen] = useState(false);
+  const {Instagram, Like, Comment, Save, PreviewImage} = Image;
+
+  function ImagePost() {
+    if (props.image === '') {
+      return <img src={PreviewImage} alt="Imagem do post" className="image" />;
+    } else {
+      return <img src={props.image} alt="Imagem do post" className="image" />;
+    }
+  }
+
+  function Close() {
+    setIsOpen(false);
+  }
+
+  function Open() {
+    setIsOpen(true);
+  }
+
+  return (
+    <div className="modal-container">
+      <div onClick={() => Open()} className="ButtonPreviewPost">
+        <span className="label">Visualizar post</span>
+      </div>
+      <Modal show={isOpen} onHide={() => Close()}>
+        <Modal.Header>
+          <Modal.Title>Visualização do post</Modal.Title>
+        </Modal.Header>
+        <Modal.Body className="center">
+          <div className="viewPost">
+            <div className="profile">
+              <img className="socialLogo" src={Instagram} alt="Instagram" />
+              <span>{props.name}</span>
+            </div>
+            <div className="imagemPost">{ImagePost()}</div>
+            <div className="postDescription">
+              <div className="options">
+                <img src={Like} alt="Like" />
+                <img src={Comment} alt="Comment" />
+                <img src={Save} alt="Instagram" />
+              </div>
+              <div className="text">
+                <span>{props.textPost ? props.textPost : 'Texto do post'}</span>
+              </div>
+            </div>
+          </div>
+        </Modal.Body>
+      </Modal>
+    </div>
+  );
+};

@@ -23,6 +23,7 @@
 @media only screen and (max-width: 600px) {
   .footer {
     display: flex;
+    z-index: 999 !important;
 
     .buttonsContainer {
       padding: 10px;

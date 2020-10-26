@@ -47,3 +47,11 @@
     }
   }
 }
+
+// responsive layout
+@media only screen and (max-width: 600px) {
+  .viewPost {
+    width: 100%;
+    overflow: auto;
+  }
+}

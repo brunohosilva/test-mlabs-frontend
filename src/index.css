@@ -39,10 +39,6 @@ code {
   display: none !important;
 }
 
-.dzu-dropzone {
-  border: 0px solid transparent;
-}
-
 .dzu-previewContainer{
   padding: 0 !important;
 }
@@ -58,5 +54,13 @@ code {
   .react-emoji-picker--wrapper{
     top: -392px !important;
     right: 0px !important;
+  }
+
+  .dzu-dropzone {
+    min-height: 45px !important;
+  }
+
+  .rs-modal-sm {
+    width: 90% !important;
   }
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import {ModalPreview} from '../../lib/Modal';
 import Image from '../../lib/Images';
 import SocialPreview from '../Preview';
 import './style.scss';
@@ -38,10 +39,12 @@ const PostPreview = (props) => {
         </div>
         {Preview()}
       </div>
-      <div className="mobilePreview" onClick={() => console.log('click')}>
-        <div className="ButtonPreviewPost">
-          <span className="label">Visualizar post</span>
-        </div>
+      <div className="mobilePreview">
+        <ModalPreview
+          name="Bruno Oliveira"
+          image={props.image}
+          textPost={props.text}
+        />
       </div>
     </div>
   );
