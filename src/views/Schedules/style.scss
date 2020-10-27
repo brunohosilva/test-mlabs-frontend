@@ -19,6 +19,33 @@
         width: 45%;
       }
 
+      .circleInsta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 20px;
+        margin-left: 15px;
+        background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+
+      }
+
+      .circleLinke{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 20px;
+        margin-left: 15px;
+        background-color: #3a70da;
+      }
+
+      .socialLogoContainer{
+        display: flex;
+      }
+      
       .heigth {
         height: 65px;
 
@@ -68,9 +95,7 @@
 
 
 
-      .socialLogo {
-        margin-left: 20px;
-      }
+      
 
       table {
         border-collapse: collapse;

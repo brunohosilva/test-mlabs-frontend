@@ -3,7 +3,7 @@ import Image from '../../lib/Images';
 import './style.scss';
 
 const TextPost = (props) => {
-  const {Instagram, Like, Comment, Save, PreviewImage} = Image;
+  const {Like, Comment, Save, PreviewImage, WhiteInstagram} = Image;
 
   function ImagePost() {
     if (props.image === '') {
@@ -16,8 +16,11 @@ const TextPost = (props) => {
   return (
     <div className="viewPost">
       <div className="profile">
-        <img className="socialLogo" src={Instagram} alt="Instagram" />
-        <span>{props.name}</span>
+        <div className="circle">
+          <img className="socialLogo" src={WhiteInstagram} alt="Instagram" />
+        </div>
+
+        <span className="profileName">{props.name}</span>
       </div>
       <div className="imagemPost">{ImagePost()}</div>
       <div className="postDescription">

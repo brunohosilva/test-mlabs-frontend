@@ -16,6 +16,8 @@ import Like from '../../assets/Images/like.png';
 import Comment from '../../assets/Images/comment.png';
 import Save from '../../assets/Images/save.png';
 import Success from '../../assets/Images/success.png';
+import WhiteLinkedin from '../../assets/Images/whiteLinkedin.png';
+import WhiteInstagram from '../../assets/Images/whiteInstagram.png';
 
 export default {
   CalendarIcon,
@@ -35,5 +37,7 @@ export default {
   Success,
   Twitter,
   Upload,
+  WhiteInstagram,
+  WhiteLinkedin,
   Youtube,
 };

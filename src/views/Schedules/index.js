@@ -11,7 +11,7 @@ const Schedules = () => {
   const data = localStorage.getItem('data');
   const response = JSON.parse(data);
   const list = schedulesList.data;
-  const {Instagram, Linkedin} = Image;
+  const {WhiteInstagram, WhiteLinkedin} = Image;
 
   return (
     <div className="container">
@@ -29,14 +29,17 @@ const Schedules = () => {
             </tr>
             {response.map((item, index) => {
               const social = Image[item.social];
+              const color =
+                social === 'Instagram' ? 'circleInsta' : 'circleLinke';
+              const icon =
+                social === 'Instagram' ? WhiteInstagram : WhiteLinkedin;
+
               return (
                 <tr key={index}>
                   <td>
-                    <img
-                      className="socialLogo"
-                      src={social}
-                      alt={item.social}
-                    />
+                    <div class={color}>
+                      <img src={icon} alt={item.social} />
+                    </div>
                   </td>
                   <td className="heigth">
                     <img
@@ -76,11 +79,18 @@ const Schedules = () => {
                 var statusKey = tmp[i];
                 switch (statusKey) {
                   case 2 && 3:
-                    logo = `<img class="socialLogo" src=${Instagram} />  <img class="socialLogo" src=${Linkedin} />`;
+                    logo = `<div class="circleInsta">
+                              <img src=${WhiteInstagram} />
+                            </div>
+                            <div class="circleLinke">
+                              <img src=${WhiteLinkedin} />
+                            </div>`;
                     break;
 
                   case 2:
-                    logo = `<img class="socialLogo" src=${Instagram} />`;
+                    logo = `<div class="circleInsta">
+                              <img src=${WhiteInstagram} />
+                            <div/>`;
                     break;
                 }
               }
