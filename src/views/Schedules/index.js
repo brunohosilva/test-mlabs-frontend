@@ -28,13 +28,11 @@ const Schedules = () => {
               <th className="title width150">Status</th>
             </tr>
             {response.map((item, index) => {
-              const social = Image[item.social];
-
               const color =
-                social === 'Instagram' ? 'circleInsta' : 'circleLinke';
+                item.social === 'Instagram' ? 'circleInsta' : 'circleLinke';
 
               const icon =
-                social === 'Instagram' ? WhiteInstagram : WhiteLinkedin;
+                item.social === 'Instagram' ? WhiteInstagram : WhiteLinkedin;
 
               return (
                 <tr key={index}>

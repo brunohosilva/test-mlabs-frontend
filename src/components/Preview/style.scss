@@ -145,3 +145,10 @@ $gray: #828282;
     overflow: auto;
   }
 }
+
+// responsive layout
+@media only screen and (max-height: 736px) {
+  .viewPost {
+    margin-top: 100px;
+  }
+}
