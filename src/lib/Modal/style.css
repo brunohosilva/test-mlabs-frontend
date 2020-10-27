@@ -25,3 +25,13 @@
   text-decoration-line: underline;
   color: #1661f3;
 }
+
+/* responsive layout */
+@media only screen and (max-width: 600px) {
+  .width {
+    width: 100%;
+  }
+}
+
+
+

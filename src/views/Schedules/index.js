@@ -3,7 +3,7 @@ import moment from 'moment';
 import Header from '../../components/Header';
 import schedulesList from '../../assets/json/schedules';
 
-import {ModalPreview} from '../../lib/Modal';
+import {ModalPreview, ModalPreviewSchedule} from '../../lib/Modal';
 import Image from '../../lib/Images';
 import './style.scss';
 
@@ -29,8 +29,10 @@ const Schedules = () => {
             </tr>
             {response.map((item, index) => {
               const social = Image[item.social];
+
               const color =
                 social === 'Instagram' ? 'circleInsta' : 'circleLinke';
+
               const icon =
                 social === 'Instagram' ? WhiteInstagram : WhiteLinkedin;
 
@@ -58,6 +60,7 @@ const Schedules = () => {
                       type={'SchedulesPreview'}
                       textPost={item.text}
                       image={item.image}
+                      social={item.social}
                     />
                   </td>
                   <td className="status">
@@ -127,7 +130,7 @@ const Schedules = () => {
                     </span>
                   </td>
                   <td>
-                    <ModalPreview
+                    <ModalPreviewSchedule
                       type={'SchedulesPreview'}
                       textPost={item.text}
                       image={item.media}

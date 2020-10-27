@@ -18,14 +18,19 @@ import Save from '../../assets/Images/save.png';
 import Success from '../../assets/Images/success.png';
 import WhiteLinkedin from '../../assets/Images/whiteLinkedin.png';
 import WhiteInstagram from '../../assets/Images/whiteInstagram.png';
+import CommentLinkedin from '../../assets/Images/commentLinkedin.png';
+import ShareLinkedin from '../../assets/Images/shareLinkedin.png';
+import LikeLinkedin from '../../assets/Images/likeLinkedin.png';
 
 export default {
   CalendarIcon,
   Clock,
   Comment,
+  CommentLinkedin,
   Facebook,
   Instagram,
   Like,
+  LikeLinkedin,
   Linkedin,
   Logo,
   Menu,
@@ -34,6 +39,7 @@ export default {
   PreviewImage,
   Profile,
   Save,
+  ShareLinkedin,
   Success,
   Twitter,
   Upload,

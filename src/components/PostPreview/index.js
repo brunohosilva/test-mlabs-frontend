@@ -25,6 +25,7 @@ const PostPreview = (props) => {
             name="Bruno Oliveira"
             image={props.image}
             textPost={props.text}
+            social={props.type}
           />
         </div>
       );
@@ -45,6 +46,7 @@ const PostPreview = (props) => {
           image={props.image}
           textPost={props.text}
           type={PostPreview}
+          social={props.type}
         />
       </div>
     </div>

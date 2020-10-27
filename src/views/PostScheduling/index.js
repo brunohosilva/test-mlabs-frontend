@@ -56,7 +56,11 @@ const PostScheduling = () => {
         <div className="col-6 col-s-12 paddingBottom">
           <div className="row">
             <div className="col-12 col-s-12">
-              <PostPreview image={setImagePost} text={setTextPost} />
+              <PostPreview
+                image={setImagePost}
+                text={setTextPost}
+                type={setSocial}
+              />
             </div>
           </div>
         </div>
