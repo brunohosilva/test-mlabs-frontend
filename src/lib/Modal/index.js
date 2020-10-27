@@ -111,7 +111,7 @@ export const ModalPreview = (props): void => {
           <div className="viewPost">
             <div className="profile">
               <img className="socialLogo" src={Instagram} alt="Instagram" />
-              <span>{props.name}</span>
+              <span className="profileName">{props.name}</span>
             </div>
             <div className="imagemPost">{ImagePost()}</div>
             <div className="postDescription">

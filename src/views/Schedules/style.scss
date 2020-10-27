@@ -1,5 +1,11 @@
+$mercury: #e5e5e5;
+$silver: #bdbdbd;
+$royalblue: #3A70DA;
+$emperor: #4F4F4F;
+$white: #ffffff;
+
 .container {
-  background: #e5e5e5;
+  background: $mercury;
   min-height: 100vh;
   flex-direction: column;
   justify-content: center;
@@ -11,7 +17,7 @@
       border-style: solid;
       border-radius: 4px;
       border-width: 2px;
-      border-color: #bdbdbd;
+      border-color: $silver;
       margin-top: 100px;
       overflow: auto;
 
@@ -39,7 +45,7 @@
         height: 35px;
         border-radius: 20px;
         margin-left: 15px;
-        background-color: #3a70da;
+        background-color: $royalblue;
       }
 
       .socialLogoContainer{
@@ -60,7 +66,7 @@
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
-        color: #4f4f4f;
+        color: $emperor;
       }
 
       .status {
@@ -80,7 +86,7 @@
             font-style: normal;
             font-weight: 500;
             font-size: 14px;
-            color: #4f4f4f;
+            color: $emperor;
           }
         }
       }
@@ -90,7 +96,7 @@
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
-        color: #4f4f4f;
+        color: $emperor;
       }
 
 
@@ -109,7 +115,7 @@
       }
 
       tr:nth-child(odd) {
-        background-color: white;
+        background-color: $white;
       }
     }
   }

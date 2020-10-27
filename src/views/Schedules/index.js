@@ -54,6 +54,7 @@ const Schedules = () => {
                   </td>
                   <td>
                     <ModalPreview
+                      name={'Bruno Oliveira'}
                       type={'SchedulesPreview'}
                       textPost={item.text}
                       image={item.image}

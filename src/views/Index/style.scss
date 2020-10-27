@@ -1,5 +1,7 @@
+$mercury: #e5e5e5;
+
 .container {
-  background: #e5e5e5;
+  background: $mercury;
   min-height: 100vh;
   flex-direction: column;
   justify-content: center;

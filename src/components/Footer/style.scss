@@ -1,6 +1,8 @@
+$white: #ffffff;
+
 .footer {
   height: 80px;
-  background-color: white;
+  background-color: $white;
   display: flex;
   align-items: center;
   position: fixed;
