@@ -96,6 +96,9 @@ const Schedules = () => {
                               <img src=${WhiteInstagram} />
                             <div/>`;
                     break;
+
+                  default:
+                    return null;
                 }
               }
 
@@ -110,6 +113,9 @@ const Schedules = () => {
                   status = 'Não aprovado';
                   statusColor = '#F2C94C';
                   break;
+
+                default:
+                  return null;
               }
 
               return (
@@ -119,7 +125,11 @@ const Schedules = () => {
                     className="socialLogoContainer"
                   />
                   <td className="heigth">
-                    <img className="imagePostContainer" src={item.media} />
+                    <img
+                      className="imagePostContainer"
+                      src={item.media}
+                      alt="Post"
+                    />
                   </td>
                   <td>
                     <p className="description">{item.text}</p>
